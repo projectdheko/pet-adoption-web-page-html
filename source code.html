@@ -1,0 +1,396 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pet Adoption &amp; Welfare</title>
+<style>
+body {
+margin: 0;
+}
+header {
+background: linear-gradient(45deg ,#434343, #252525);
+padding: 20px 0;
+}
+nav {
+display: flex;
+align-items: center;
+margin: 0 auto;
+padding: 0 20px;
+justify-content: space-between;
+max-width: 1300px;
+}
+ul {
+display: flex;
+gap: 40px;
+list-style: none;
+}
+ul li a{
+color: white;
+font-weight: bold;
+text-decoration: none;
+font-size: 17px;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans',
+Arial, sans-serif
+}
+.name {
+color: white;
+font-size: 50px;
+font-weight: bolder;font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans',
+Arial, sans-serif
+}
+.fullform {
+color: white;
+font-size: 15px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans',
+Arial, sans-serif;
+}
+#namelogo {
+display: flex;
+}
+.mainlogo img {
+width: 50px;
+height: 50px;
+margin-left: 10px;
+}
+.main1 {
+padding: 80px 0;
+text-align: center;
+background-image: url(pet-background.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+height: 602px;
+}
+.frontdisplay {
+padding: 20px;
+padding-bottom: 90px;
+color: white;
+}
+.frontdisplay h1 {
+font-size: 50px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.frontdisplay p {
+font-size: 25px;
+}
+.searchbar {
+display: flex;
+justify-content: center;
+}
+.petsearch {
+padding: 10px;
+border-radius: 20px;
+text-decoration: none;
+font-size: 19px;
+border: 2px solid;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans',
+Arial, sans-serif;
+min-width: 20%;
+}
+.frontdisplay button {
+border-radius: 50%;
+height: 46px;
+width: 46px;
+border: 2px solid;margin-left: 8px;
+}
+.frontdisplay button img {
+width: 80%
+}
+.image-gallery {
+display: flex;
+justify-content: space-evenly;
+}
+.image-gallery div {
+flex: 1;
+color:white;
+font-size: 25px;
+border: 10px solid #cdcdcd;
+height: 230px;
+width: 300px;
+transition: transform 0.4s;
+}
+.image-gallery div:hover {
+transform: scale(1.05);
+}
+.image-gallery div p {
+margin-top: 239px;
+font-style: italic;
+font-weight: bold;
+text-decoration: none;
+color: white;
+padding: 10px;
+}
+.image-gallery a {
+text-decoration: none;
+margin: 0;
+}
+.image1 {
+background-image: url(pic1.jpg);
+background-size: cover;
+}
+.image2 {
+background-image: url(pic2.jpg);
+background-size: cover;
+}
+.image3 {
+background-image: url(pic3.jpg);
+background-size: cover;
+}
+.main2 h1 {
+text-align: center;
+font-family: Cambria;
+margin:20px 90px;
+padding:25px;
+background-color: #363533;
+color: white;
+border-radius: 10px;
+}
+.steps {
+display: flex;
+justify-content: space-evenly;}
+.steps img {
+display: inline-block;
+height: 500px;
+width: 500px;
+}
+.steps div {
+display: inline-block;
+vertical-align: top;
+height: 500px;
+width:800px;
+padding: 20px 30px;
+}
+.steps div dl {
+margin: 0;
+}
+.content {
+display: inline-block;
+color:#fff;
+background-color:#615954;
+border: 1px solid #363533;
+border-radius: 20px;
+padding: 15px;
+margin-bottom: 20px;
+}
+.content dt {
+font-weight: bold;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans',
+Arial, sans-serif;
+}
+.content dd {
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans',
+Arial, sans-serif;
+font-style: italic;
+}
+dl span {
+transition: 0.3s;
+}
+dl span:hover {
+box-shadow: 5px 5px 10px 3px #000000;
+transform: scale(1.01);
+}
+#readytitle {
+font-size: 40px;
+text-align: center;
+margin-top: 30px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans',
+Arial, sans-serif;
+font-weight: bolder;
+}
+.ready img {
+height: 150px;
+width: 150px;
+}
+.endtext {
+display: flex;;
+padding: 10px;font-size: 20px;
+text-align: center;
+background-color: #434343;
+color: white;
+align-items: center;
+justify-content: center;
+border-radius: 15px;
+}
+.ready a {
+text-decoration: none;
+}
+.ready {
+display: flex;
+justify-content: space-around;
+}
+.logo1 {
+height: 50px;
+width: 150px;
+}
+.logo2 {
+height: 50px;
+width: 130px;
+}
+.logo3 {
+height: 50px;
+width: 130px;
+margin-left: -10px;
+}
+.newsletter {
+display: flex;
+justify-content: space-between;
+margin: 0;
+background-color: #434343;
+color: white;
+padding: 10px 27px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans',
+Arial, sans-serif;
+}
+.newsletter button {
+background-color: #2a2a2a;
+padding: 10px;
+color: white;
+border-radius: 15px;
+width: 100px;
+transition: 0.2s;
+border: none;
+}
+.newsletter input {
+padding: 10px;
+width: 300px;
+border-radius: 15px;
+border: none
+}
+.newsletter button:hover {
+box-shadow: 0 0 6px white;
+}
+.contactus a {text-align: center;
+text-decoration: none;
+color:white;
+}
+</style>
+<link rel="icon" type="image/x-icon" href="website-icon.png">
+</head>
+<body><header>
+<nav>
+<div class="heading">
+<div id="namelogo">
+<span class="name">PAW</span>
+<span class="mainlogo"><img src="website-icon.png"></span>
+</div>
+<span class="fullform">Pet Adoption &amp; Welfare</span>
+</div>
+<ul>
+<li><a href=#Home>Resources</a></li>
+<li><a href=#listings>Pet Listings</a></li>
+<li><a href=#FAQ>Gallery</a></li>
+<li><a href=#About>FAQ</a></li>
+<li><a href=#community>About Us</a></li>
+</ul>
+</nav>
+</header>
+<main class="main1">
+<section class="frontdisplay">
+<h1>Companionship Starts Here</h1>
+<p>Adopt a Pet, Adopt a Lifelong Friendship</p>
+<div class="searchbar">
+<input type="search" placeholder="Search for Pets" class="petsearch"></input>
+<button type="submit">
+<div><img src="search-icon.png"></div>
+</button>
+</div>
+</section>
+<section class="image-gallery">
+<a target="_blank" href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/2008-07-28_Dog_at_Frolick_Field.jpg/220px-2008-07-28_Dog_at_Frolick_Field.jpg">
+<div class="image1">
+<p>French Bulldog</p>
+</div>
+</a>
+<a target="_blank" href="https://en.wikipedia.org/wiki/Golden_Retriever">
+<div class="image2">
+<p>Golden Retriever</p>
+</div>
+</a>
+<a target="_blank" href="https://en.wikipedia.org/wiki/Russian_Blue">
+<div class="image3">
+<p>Russian Blue</p>
+</div>
+</a>
+</section>
+</main>
+<main class="main2">
+<h1>Your Path to Pet Parenthood</h1>
+<section class="steps">
+<img src="adoptionstepscat.png">
+<div>
+<dl><span class="content"><dt>1. Explore Available Pets</dt>
+<dd>Begin your journey by exploring the profiles of available pets on our
+website. You can browse by
+species, breed, age, or other criteria</dd>
+</span>
+<span class="content">
+<dt>2. Contact Us</dt>
+<dd>If you find a pet that captures your heart, don't hesitate to get in touch
+with us. You can contact us
+via the Contact Us button.</dd>
+</span>
+<span class="content">
+<dt>3. Complete an Adoption Application</dt>
+<dd>To initiate the adoption process, you'll need to complete an adoption
+application. This application
+helps us get to know you better and ensures that we find the right match for
+both you and the pet.</dd>
+</span>
+<span class="content">
+<dt>4. Home Visit or Meeting</dt>
+<dd>We may conduct a home visit which will allow us to assess whether your
+home is suitable for the pet and
+gives you a chance to interact with them in person.</dd>
+</span>
+<span class="content">
+<dt>5. Bring Your New Family Member Home</dt>
+<dd>Congratulations! You've successfully adopted a pet. Now it's time to bring
+your new family member home.
+Prepare a safe and comfortable space for them.</dd>
+</span>
+</dl>
+</div>
+</section>
+</main>
+<p id="readytitle"> Ready to Adopt?</p>
+<div class="ready">
+<div class="container1">
+<img src="dog-icon.png">
+<a href="#find">
+<p class="endtext logo1">Find Your Pet</p>
+</a>
+</div>
+<div class="container2">
+<img src="careicon.png">
+<a href="#care">
+<p class="endtext logo2">Pet Care</p>
+</a>
+</div>
+<div class="container3">
+<img src="app-icon.png">
+<a href="#form">
+<p class="endtext logo3">Adoption Form</p>
+</a>
+</div>
+</div>
+<div class="newsletter">
+<span><h2 style>Want to stay updated? Subscribe to our Newsletter</h2>
+<form>
+<input type="email" placeholder="Enter your E-Mail">
+<button type="submit">Submit</button>
+</form>
+</span>
+<span class="contactus">
+<a href="#contact">
+<h3>Contact Us</h3>
+</a>
+<address>
+Pet Adoption &amp; Welfare<br>
++91 8683093125<br>
+<a target="_blank" href="mailto:customercare@paw.in">customercare@paw.in</a>
+</address>
+</span>
+</div>
+</body>
+</html>
